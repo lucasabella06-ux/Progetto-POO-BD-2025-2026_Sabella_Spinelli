@@ -1,0 +1,6 @@
+Moderatore 1;P001
+Moderatore 6;P004
+Moderatore 8;P006
+Moderatore 9;P0011
+Moderatore 10;P0011
+Moderatore 1;P003

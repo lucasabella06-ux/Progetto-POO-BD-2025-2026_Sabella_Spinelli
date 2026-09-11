@@ -1,0 +1,6 @@
+Giocatore 11;L001
+Giocatore 12;L001
+Giocatore 15;L001
+Giocatore 16;L002
+Giocatore 17;L003
+Giocatore 51;L004

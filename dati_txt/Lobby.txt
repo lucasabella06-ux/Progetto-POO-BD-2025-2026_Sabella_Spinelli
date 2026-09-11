@@ -1,0 +1,4 @@
+L001;12;Giocatore 9
+L002;10;Giocatore 10
+L003;24;Giocatore 85
+L004;2;Giocatore 84

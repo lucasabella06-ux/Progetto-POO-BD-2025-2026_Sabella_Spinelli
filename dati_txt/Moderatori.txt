@@ -1,0 +1,10 @@
+Moderatore 1;Moderatore1@gmail.com;BBBB0001;MM111;4;18
+Moderatore 2;Moderatore2@gmail.com;BBBB0002;MM112;8;22
+Moderatore 3;Moderatore3@gmail.com;BBBB0003;MM113;2;15
+Moderatore 4;Moderatore4@gmail.com;BBBB0004;MM114;11;20
+Moderatore 5;Moderatore5@gmail.com;BBBB0005;MM115;6;14
+Moderatore 6;Moderatore6@gmail.com;BBBB0006;MM116;1;23
+Moderatore 7;Moderatore7@gmail.com;BBBB0007;MM117;12;17
+Moderatore 8;Moderatore8@gmail.com;BBBB0008;MM118;7;19
+Moderatore 9;Moderatore9@gmail.com;BBBB0009;MM119;9;21
+Moderatore 10;Moderatore10@gmail.com;BBBB00010;MM1110;3;16

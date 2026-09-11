@@ -1,0 +1,11 @@
+P001;Apex Legends;60;Moderatore 3
+P002;Fall Guys;32;Moderatore 4
+P003;Fortnite;100;Moderatore 4
+P004;Call Of Duty: Warzone;120;Moderatore 4
+P005;EA Sports FC;2;Moderatore 4
+P006;Fortnite;100;Moderatore 4
+P007;Brawl Stars;10;Moderatore 4
+P008;Clash Royale;2;Moderatore 7
+P009;GTA 6;15;Moderatore 10
+P0010;Minecraft;20;Moderatore 2
+P0011;Apex Legends;60;Moderatore 6

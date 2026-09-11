@@ -1,0 +1,2 @@
+L001;A001;Valorant;4
+L002;A002;Ea Sports FC;2
