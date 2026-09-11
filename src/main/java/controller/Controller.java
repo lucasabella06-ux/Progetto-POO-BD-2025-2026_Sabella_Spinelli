@@ -1,6 +1,7 @@
 package controller;
 
 import dao.*;
+import implementazioneTextDAO.*;
 import model.*;
 
 import java.util.ArrayList;
@@ -90,7 +91,7 @@ public class Controller {
         ArrayList<Integer> listaPartiteVinte = new ArrayList<Integer>();
         ArrayList<Integer> listaPartitePerse = new ArrayList<Integer>();
         ArrayList<String> listaIsAttivo = new ArrayList<String>();
-        GiocatoriDAO giocatoriDAO = new GiocatoriDAOImplText("Giocatori.txt");
+        GiocatoriDAO giocatoriDAO = new GiocatoriDAOImplText("dati_txt/Giocatori.txt");
         giocatoriDAO.generaGiocatori(listaNomi, listaEmail, listaPassword, listaIdGiocatori, listaLivelli, listaPartiteVinte, listaPartitePerse, listaIsAttivo);
         for(int i = 0; i < listaNomi.size(); i++)
         {
@@ -118,7 +119,7 @@ public class Controller {
         ArrayList<String> listaCodiciModeratori = new ArrayList<String>();
         ArrayList<Integer> listaOrariInizioAttivita = new ArrayList<Integer>();
         ArrayList<Integer> listaOrariFineAttivita = new ArrayList<Integer>();
-        ModeratoriDAO moderatoriDAO = new ModeratoriDAOImplText("Moderatori.txt");
+        ModeratoriDAO moderatoriDAO = new ModeratoriDAOImplText("dati_txt/Moderatori.txt");
         moderatoriDAO.generaModeratori(listaNomi, listaEmail, listaPassword, listaCodiciModeratori, listaOrariInizioAttivita, listaOrariFineAttivita);
         for(int i = 0; i < listaNomi.size(); i++)
         {
@@ -139,7 +140,7 @@ public class Controller {
         ArrayList<String> listaVideogiochi = new ArrayList<String>();
         ArrayList<Integer> listaCapienze = new ArrayList<Integer>();
         ArrayList<String> listaModeratoriPartite = new ArrayList<String>();
-        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("PartitePubbliche.txt");
+        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/PartitePubbliche.txt");
         partitePubblicheDAO.generaPartitePubbliche(listaCodiciPartitePubbliche, listaVideogiochi, listaCapienze, listaModeratoriPartite);
         for(int i = 0; i < listaCodiciPartitePubbliche.size(); i++)
         {
@@ -163,7 +164,7 @@ public class Controller {
     public void prendiPartecipantiAllePartitePubbliche(){
         ArrayList<String> listaNomi = new ArrayList<String>();
         ArrayList<String> listaCodiciPartitePubbliche = new ArrayList<String>();
-        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("PartecipazioniGiocatoriPartitePubbliche.txt");
+        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/PartecipazioniGiocatoriPartitePubbliche.txt");
         partitePubblicheDAO.generaPartecipantiPartitePubbliche(listaNomi, listaCodiciPartitePubbliche);
         for(int i = 0; i < listaNomi.size(); i++)
         {
@@ -195,7 +196,7 @@ public class Controller {
     public void prendiModeratoriExtraPartitePubbliche(){
         ArrayList<String> listaNomi = new ArrayList<String>();
         ArrayList<String> listaCodiciPartitePubbliche = new ArrayList<String>();
-        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("GestioniExtraModeratoriPartite.txt");
+        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/GestioniExtraModeratoriPartite.txt");
         partitePubblicheDAO.generaGestioniExtraPartitePubbliche(listaNomi, listaCodiciPartitePubbliche);
         for(int i = 0; i < listaNomi.size(); i++)
         {
@@ -229,7 +230,7 @@ public class Controller {
         ArrayList<String> listaCodiciLobby = new ArrayList<String>();
         ArrayList<Integer> listaCapienzeMax= new ArrayList<Integer>();
         ArrayList<String> listaHost = new ArrayList<String>();
-        LobbyDAO lobbyDAO = new LobbyDAOImplText("Lobby.txt");
+        LobbyDAO lobbyDAO = new LobbyDAOImplText("dati_txt/Lobby.txt");
         lobbyDAO.generaLobby(listaCodiciLobby, listaCapienzeMax, listaHost);
         for(int i = 0; i < listaCodiciLobby.size(); i++)
         {
@@ -254,7 +255,7 @@ public class Controller {
     public void prendiPartecipantiAlleLobby(){
         ArrayList<String> listaNomi = new ArrayList<String>();
         ArrayList<String> listaCodiciLobby = new ArrayList<String>();
-        LobbyDAO lobbyDAO = new LobbyDAOImplText("PartecipazioniGiocatoriLobby.txt");
+        LobbyDAO lobbyDAO = new LobbyDAOImplText("dati_txt/PartecipazioniGiocatoriLobby.txt");
         lobbyDAO.generaPartecipantiLobby(listaNomi, listaCodiciLobby);
         for(int i = 0; i < listaNomi.size(); i++)
         {
@@ -288,7 +289,7 @@ public class Controller {
         ArrayList<String> listaCodiciPartiteAmichevoli = new ArrayList<String>();
         ArrayList<String> listaVideogiochi = new ArrayList<String>();
         ArrayList<Integer> listaCapienze = new ArrayList<Integer>();
-        PartiteAmichevoliDAO partiteAmichevoliDAO = new PartiteAmichevoliDAOImplText("PartiteAmichevoli.txt");
+        PartiteAmichevoliDAO partiteAmichevoliDAO = new PartiteAmichevoliDAOImplText("dati_txt/PartiteAmichevoli.txt");
         partiteAmichevoliDAO.generaPartiteAmichevoli(listaCodiciLobby, listaCodiciPartiteAmichevoli, listaVideogiochi, listaCapienze);
         for(int i = 0; i < listaCodiciLobby.size(); i++)
         {
@@ -329,7 +330,7 @@ public class Controller {
         ArrayList<String> listaGiocatoriSegnalati = new ArrayList<String>();
         ArrayList<Date> listaDate = new ArrayList<Date>();
         ArrayList<String> listaMotivi = new ArrayList<String>();
-        SegnalazioniDAO segnalazioniDAO = new SegnalazioniDAOImplText("Segnalazioni.txt");
+        SegnalazioniDAO segnalazioniDAO = new SegnalazioniDAOImplText("dati_txt/Segnalazioni.txt");
         segnalazioniDAO.generaSegnalazioni(listaAutoriSegnalazioni, listaGiocatoriSegnalati, listaDate, listaMotivi);
         for (int i = 0; i < listaAutoriSegnalazioni.size(); i++) {
             Giocatore autoreSegnalazione = null;
@@ -548,7 +549,7 @@ public class Controller {
 
         int totaleGiocatori = listaGiocatori.size()+listaGiocatoriBanditi.size();
         String idGiocatore = "G00"+(totaleGiocatori+1);
-        GiocatoriDAO giocatoriDAO = new GiocatoriDAOImplText("Giocatori.txt");
+        GiocatoriDAO giocatoriDAO = new GiocatoriDAOImplText("dati_txt/Giocatori.txt");
         giocatoriDAO.aggiungiGiocatore(nomeUtente, email, password, idGiocatore );
         Giocatore nuovoGiocatore = new Giocatore(nomeUtente, email, password, idGiocatore);
         listaGiocatori.add(nuovoGiocatore);
@@ -606,7 +607,7 @@ public class Controller {
 
         int totaleModeratori = listaModeratori.size();
         String nuovoCodiceModeratore = "MM11"+(totaleModeratori+1);
-        ModeratoriDAO moderatoriDAO = new ModeratoriDAOImplText("Moderatori.txt");
+        ModeratoriDAO moderatoriDAO = new ModeratoriDAOImplText("dati_txt/Moderatori.txt");
         moderatoriDAO.aggiungiModeratore(nomeUtente, email, password, nuovoCodiceModeratore, orarioInizioAttivita, orarioFineAttivita);
         Moderatore nuovoModeratore = new Moderatore(nomeUtente, email, password,nuovoCodiceModeratore, orarioInizioAttivita, orarioFineAttivita);
         listaModeratori.add(nuovoModeratore);
@@ -756,7 +757,7 @@ public class Controller {
                 }
             }
             else{
-                PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("PartecipazioniGiocatoriPartitePubbliche.txt");
+                PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/PartecipazioniGiocatoriPartitePubbliche.txt");
                 partitePubblicheDAO.aggiungiGiocatoreAllaPartitaPubblica(giocatoreLoggato.getNomeUtente(), partitaSelezionata.getCodicePartita());
             }
         }
@@ -809,7 +810,7 @@ public class Controller {
                 }
             }
             else{
-                LobbyDAO lobbyDAO = new LobbyDAOImplText("PartecipazioniGiocatoriLobby.txt");
+                LobbyDAO lobbyDAO = new LobbyDAOImplText("dati_txt/PartecipazioniGiocatoriLobby.txt");
                 lobbyDAO.aggiungiGiocatoreAllaLobby(giocatoreLoggato.getNomeUtente(), lobbySelezionata.getCodiceLobby());
             }
         }
@@ -850,7 +851,7 @@ public class Controller {
         }
 
         if(giocatoreLoggato.getLobbyAttuale() == null){
-            LobbyDAO lobbyDAO = new LobbyDAOImplText("Lobby.txt");
+            LobbyDAO lobbyDAO = new LobbyDAOImplText("dati_txt/Lobby.txt");
             lobbyDAO.aggiungiLobby(codiceLobby, capienzaMax, giocatoreLoggato.getNomeUtente());
             giocatoreLoggato.creaLobby(codiceLobby, capienzaMax);
             listaLobby.add(giocatoreLoggato.getLobbyAttuale());
@@ -902,7 +903,7 @@ public class Controller {
      * del giocatore alla partita pubblica.
      */
     public void giocatoreLoggatoEsceDallaPartita(){
-        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("PartecipazioniGiocatoriPartitePubbliche.txt");
+        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/PartecipazioniGiocatoriPartitePubbliche.txt");
         partitePubblicheDAO.rimuoviGiocatoreDallaPartitaPubblica(giocatoreLoggato.getNomeUtente());
         giocatoreLoggato.esciDallaPartita();
     }
@@ -969,7 +970,7 @@ public class Controller {
             ArrayList<Integer> listaLivelli = new ArrayList<Integer>();
             ArrayList<Integer> listaPartiteVinte = new ArrayList<Integer>();
             ArrayList<Integer> listaPartitePerse = new ArrayList<Integer>();
-            PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("PartecipazioniGiocatoriPartitePubbliche.txt");
+            PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/PartecipazioniGiocatoriPartitePubbliche.txt");
             for (Giocatore g : listaPartecipanti) {
                 listaLivelli.add(g.getLivello());
                 listaPartiteVinte.add(g.getPartiteVinte());
@@ -986,15 +987,15 @@ public class Controller {
             }
             for (int i = 0; i < listaPartecipanti.size(); i++) {
                 if (listaPartecipanti.get(i).getLivello() != listaLivelli.get(i)) {
-                        GiocatoriDAO giocatoriDAO = new GiocatoriDAOImplText("Giocatori.txt");
+                        GiocatoriDAO giocatoriDAO = new GiocatoriDAOImplText("dati_txt/Giocatori.txt");
                         giocatoriDAO.aggiornaLivello(listaPartecipanti.get(i).getNomeUtente());
                 }
                 if (listaPartecipanti.get(i).getPartiteVinte() != listaPartiteVinte.get(i)) {
-                        GiocatoriDAOImplText giocatoriDAO = new GiocatoriDAOImplText("Giocatori.txt");
+                        GiocatoriDAOImplText giocatoriDAO = new GiocatoriDAOImplText("dati_txt/Giocatori.txt");
                         giocatoriDAO.aggiornaPartiteVinte(listaPartecipanti.get(i).getNomeUtente());
                 }
                 if (listaPartecipanti.get(i).getPartitePerse() != listaPartitePerse.get(i)) {
-                        GiocatoriDAOImplText giocatoriDAO = new GiocatoriDAOImplText("Giocatori.txt");
+                        GiocatoriDAOImplText giocatoriDAO = new GiocatoriDAOImplText("dati_txt/Giocatori.txt");
                         giocatoriDAO.aggiornaPartitePerse(listaPartecipanti.get(i).getNomeUtente());
                 }
             }
@@ -1081,7 +1082,7 @@ public class Controller {
             }
         }
         Segnalazione.Motivo motivo = Segnalazione.Motivo.valueOf(motivoSegnalazione.trim().replace(" ","_").toUpperCase());
-        SegnalazioniDAO segnalazioniDAO = new SegnalazioniDAOImplText("Segnalazioni.txt");
+        SegnalazioniDAO segnalazioniDAO = new SegnalazioniDAOImplText("dati_txt/Segnalazioni.txt");
         Date data = new Date();
         segnalazioniDAO.aggiungiSegnalazione(giocatoreLoggato.getNomeUtente(), nomeGiocatoreSegnalato, data, motivo.toString());
         giocatoreLoggato.effettuaSegnalazione(giocatoreSegnalato, data, motivo );
@@ -1115,7 +1116,7 @@ public class Controller {
             }
         }
         Segnalazione.Motivo motivo = Segnalazione.Motivo.valueOf(motivoSegnalazione.trim().replace(" ","_").toUpperCase());
-        SegnalazioniDAO segnalazioniDAO = new SegnalazioniDAOImplText("Segnalazioni.txt");
+        SegnalazioniDAO segnalazioniDAO = new SegnalazioniDAOImplText("dati_txt/Segnalazioni.txt");
         Date data = new Date();
         segnalazioniDAO.aggiungiSegnalazione(giocatoreLoggato.getNomeUtente(), nomeGiocatoreSegnalato, data, motivo.toString());
         giocatoreLoggato.effettuaSegnalazione(giocatoreSegnalato, data, motivo );
@@ -1180,7 +1181,7 @@ public class Controller {
      * del giocatore a tale lobby.
      */
     public void giocatoreLoggatoEsceDallaLobby(){
-        LobbyDAO lobbyDAO = new LobbyDAOImplText("PartecipazioniGiocatoriLobby.txt");
+        LobbyDAO lobbyDAO = new LobbyDAOImplText("dati_txt/PartecipazioniGiocatoriLobby.txt");
         lobbyDAO.rimuoviGiocatoreDallaLobby(giocatoreLoggato.getNomeUtente());
         giocatoreLoggato.esciDallaLobby();
     }
@@ -1218,10 +1219,10 @@ public class Controller {
      * di giocatori alla stessa, che viene poi rimossa anche dalla listaLobby del sistema.
      */
     public void giocatoreLoggatoEliminaLobby(){
-        LobbyDAO lobbyDAO = new LobbyDAOImplText("Lobby.txt");
+        LobbyDAO lobbyDAO = new LobbyDAOImplText("dati_txt/Lobby.txt");
         Lobby lobbyDaEliminare = giocatoreLoggato.getLobbyAttuale();
         lobbyDAO.rimuoviLobby(lobbyDaEliminare.getCodiceLobby());
-        lobbyDAO = new LobbyDAOImplText("PartecipazioniGiocatoriLobby.txt");
+        lobbyDAO = new LobbyDAOImplText("dati_txt/PartecipazioniGiocatoriLobby.txt");
         for(Giocatore g: giocatoreLoggato.getLobbyAttuale().getPartecipantiLobby())
         {
             lobbyDAO.rimuoviGiocatoreDallaLobby(g.getNomeUtente());
@@ -1241,7 +1242,7 @@ public class Controller {
      *                   nel form di gestione lobby.
      */
     public void giocatoreLoggatoAvviaPartitaAmichevole(String videogioco){
-        PartiteAmichevoliDAO partiteAmichevoliDAO = new PartiteAmichevoliDAOImplText("PartiteAmichevoli.txt");
+        PartiteAmichevoliDAO partiteAmichevoliDAO = new PartiteAmichevoliDAOImplText("dati_txt/PartiteAmichevoli.txt");
         partiteAmichevoliDAO.aggiungiPartitaAmichevole(giocatoreLoggato.getLobbyCreata().getCodiceLobby(), "A00"+(listaPartiteAmichevoli.size()+1),videogioco, giocatoreLoggato.getLobbyCreata().getPartecipantiLobby().size());
         PartitaAmichevole a = giocatoreLoggato.getLobbyCreata().creaPartitaAmichevole(giocatoreLoggato.getLobbyCreata().getCodiceLobby(), videogioco, giocatoreLoggato.getLobbyCreata().getPartecipantiLobby().size());
         listaPartiteAmichevoli.add(a);
@@ -1256,7 +1257,7 @@ public class Controller {
      * dalla lista delle partite amichevoli presenti nel sistema.
      */
     public void giocatoreLoggatoEliminaPartitaAmichevole() {
-        PartiteAmichevoliDAO partiteAmichevoliDao = new PartiteAmichevoliDAOImplText("PartiteAmichevoli.txt");
+        PartiteAmichevoliDAO partiteAmichevoliDao = new PartiteAmichevoliDAOImplText("dati_txt/PartiteAmichevoli.txt");
         partiteAmichevoliDao.rimuoviPartitaAmichevole(giocatoreLoggato.getLobbyCreata().getCodiceLobby());
         listaPartiteAmichevoli.remove(giocatoreLoggato.getLobbyCreata().getPartitaCreata());
         giocatoreLoggato.getLobbyCreata().eliminaPartitaAmichevole();
@@ -1326,7 +1327,7 @@ public class Controller {
                 break;
             }
         }
-        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("GestioniExtraModeratoriPartite.txt");
+        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/GestioniExtraModeratoriPartite.txt");
         partitePubblicheDAO.aggiungiGestioneExtraPartitaPubblica(moderatoreLoggato.getNomeUtente(), partitaSelezionata.getCodicePartita());
         moderatoreLoggato.aggiungiPartitaGestita(partitaSelezionata);
         partitaSelezionata.getModeratori().add(moderatoreLoggato);
@@ -1363,7 +1364,7 @@ public class Controller {
      * @param partitaDaEliminare the partita da eliminare
      */
     public void eliminaPartita(Partita partitaDaEliminare){
-        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("GestioniExtraModeratoriPartite.txt");
+        PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/GestioniExtraModeratoriPartite.txt");
         partitePubblicheDAO.rimuoviPartecipantiPartitaPubblicaEliminata(partitaDaEliminare.getCodicePartita());
         for(int i = 0; i < partitaDaEliminare.getPartecipantiPartita().size(); i++)
         {
@@ -1387,7 +1388,7 @@ public class Controller {
         for (int i = 0; i < moderatoreLoggato.getPartiteGestite().size(); i++) {
             PartitaPubblica partitaGestita = moderatoreLoggato.getPartiteGestite().get(i);
             if (partitaGestita.getModeratori().size() == 1) {
-                PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("PartitePubbliche.txt");
+                PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/PartitePubbliche.txt");
                 partitePubblicheDAO.rimuoviPartitaPubblica(partitaGestita.getCodicePartita());
                 moderatoreLoggato.rimuoviPartitaGestita(partitaGestita);
                 partitaGestita.getModeratori().removeFirst();
@@ -1396,13 +1397,13 @@ public class Controller {
                 i = i - 1;
             } else {
                 if (moderatoreLoggato.getNomeUtente().equals(partitaGestita.getModeratori().get(0).getNomeUtente())) {
-                    PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("PartitePubbliche.txt");
+                    PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/PartitePubbliche.txt");
                     partitePubblicheDAO.aggiornaModeratorePartitaPubblica(partitaGestita.getModeratori().get(1).getNomeUtente(), partitaGestita.getCodicePartita());
-                    partitePubblicheDAO = new PartitePubblicheDAOImplText("GestioniExtraModeratoriPartite.txt");
+                    partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/GestioniExtraModeratoriPartite.txt.");
                     partitePubblicheDAO.rimuoviGestioneExtraPartitaPubblica(partitaGestita.getModeratori().get(1).getNomeUtente());
                 } else {
 
-                    PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("GestioniExtraModeratoriPartite.txt");
+                    PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/GestioniExtraModeratoriPartite.txt");
                     partitePubblicheDAO.rimuoviGestioneExtraPartitaPubblica(partitaGestita.getModeratori().get(1).getNomeUtente());
                 }
                 moderatoreLoggato.rimuoviPartitaGestita(partitaGestita);
@@ -1437,7 +1438,7 @@ public class Controller {
         }
         if(partitaGestita.getModeratori().size() == 1)
         {
-            PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("PartitePubbliche.txt");
+            PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/PartitePubbliche.txt");
             partitePubblicheDAO.rimuoviPartitaPubblica(partitaGestita.getCodicePartita());
             moderatoreLoggato.rimuoviPartitaGestita(partitaGestita);
             partitaGestita.getModeratori().removeFirst();
@@ -1446,14 +1447,14 @@ public class Controller {
         }
         else{
             if(moderatoreLoggato.getNomeUtente().equals(partitaGestita.getModeratori().get(0).getNomeUtente())) {
-                PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("PartitePubbliche.txt");
+                PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/PartitePubbliche.txt");
                 partitePubblicheDAO.aggiornaModeratorePartitaPubblica(partitaGestita.getModeratori().get(1).getNomeUtente(),partitaGestita.getCodicePartita());
-                partitePubblicheDAO = new PartitePubblicheDAOImplText("GestioniExtraModeratoriPartite.txt");
+                partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/GestioniExtraModeratoriPartite.txt");
                 partitePubblicheDAO.rimuoviGestioneExtraPartitaPubblica(partitaGestita.getModeratori().get(1).getNomeUtente());
             }
             else{
 
-                PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("GestioniExtraModeratoriPartite.txt");
+                PartitePubblicheDAO partitePubblicheDAO = new PartitePubblicheDAOImplText("dati_txt/GestioniExtraModeratoriPartite.txt");
                 partitePubblicheDAO.rimuoviGestioneExtraPartitaPubblica(partitaGestita.getModeratori().get(1).getNomeUtente());
             }
             moderatoreLoggato.rimuoviPartitaGestita(partitaGestita);
@@ -1496,7 +1497,7 @@ public class Controller {
      */
     public void moderatoreLoggatoBandisceGiocatore(String nomeUtenteGiocatoreBandito)
     {
-        GiocatoriDAO giocatoriDAO = new GiocatoriDAOImplText("Giocatori.txt");
+        GiocatoriDAO giocatoriDAO = new GiocatoriDAOImplText("dati_txt/Giocatori.txt");
         giocatoriDAO.rimuoviGiocatore(nomeUtenteGiocatoreBandito);
         for(Giocatore g: listaGiocatori){
             if(g.getNomeUtente().equals(nomeUtenteGiocatoreBandito)){
@@ -1534,7 +1535,7 @@ public class Controller {
      *                            moderatoreLoggato ha deciso di riattivare nel sistema.
      */
     public void moderatoreLoggatoRiattivaGiocatore(String nomeUtenteGiocatore){
-        GiocatoriDAO giocatoriDAO = new GiocatoriDAOImplText("Giocatori.txt");
+        GiocatoriDAO giocatoriDAO = new GiocatoriDAOImplText("dati_txt/Giocatori.txt");
         giocatoriDAO.riattivaGiocatore(nomeUtenteGiocatore);
         for(Giocatore g: listaGiocatoriBanditi){
             if(g.getNomeUtente().equals(nomeUtenteGiocatore)){
