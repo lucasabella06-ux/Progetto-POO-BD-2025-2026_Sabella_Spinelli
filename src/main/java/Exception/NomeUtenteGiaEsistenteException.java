@@ -1,18 +1,19 @@
 package exception;
 
 /**
- * L'eccezione NomeUtenteVuotoException viene lanciata quando un utente inserisce il proprio nome utente
- * per accedere al sistema o per creare un nuovo account, ma il nome utente inserito nel campo testuale risulta vuoto.
+ * L'eccezione NomeUtenteGiaEsistenteException viene lanciata quando un utente inserisce un nome utente per creare
+ * un nuovo account, ma il nome utente inserito appartiene già ad un altro {@link model.Utente} presente
+ * nel sistema.
  * È un'eccezione controllata per richiedere esplicitamente al sistema di gestire l'errore e permettere
  * all'utente di inserire un altro nome utente.
  */
-public class NomeUtenteVuotoException extends Exception {
+public class NomeUtenteGiaEsistenteException extends Exception {
     /**
      * Istanzia una nuova eccezione con il messaggio di errore specificato.
      *
      * @param message La descrizione testuale dell'errore rilevato.
      */
-    public NomeUtenteVuotoException(String message) {
+    public NomeUtenteGiaEsistenteException(String message) {
         super(message);
     }
 }
