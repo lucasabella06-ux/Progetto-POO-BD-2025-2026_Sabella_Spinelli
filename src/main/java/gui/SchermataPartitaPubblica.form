@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.SchermataPartitaPubblica">
+  <grid id="27dc6" binding="panelPartitaPubblica" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-14933341"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="49348" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="20" style="1"/>
+          <foreground color="-459265"/>
+          <text value="In attesa di giocatori..."/>
+        </properties>
+      </component>
+      <component id="c23e3" class="javax.swing.JLabel" binding="labelNumeroGiocatori">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="18" style="1"/>
+          <foreground color="-459265"/>
+          <text value="NumeroGiocatori"/>
+        </properties>
+      </component>
+      <component id="aee05" class="javax.swing.JButton" binding="esciDallaPartitaButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2544609"/>
+          <font name="Courier New" size="14" style="1"/>
+          <text value="Esci dalla partita"/>
+        </properties>
+      </component>
+      <component id="30ec8" class="javax.swing.JButton" binding="listaGiocatoriButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5197101"/>
+          <enabled value="true"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-14933341"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Lista Giocatori"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

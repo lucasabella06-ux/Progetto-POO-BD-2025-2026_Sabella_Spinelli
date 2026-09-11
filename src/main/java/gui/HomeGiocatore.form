@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.HomeGiocatore">
+  <grid id="27dc6" binding="panelHomeGiocatore" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-14933341"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="baf55" class="javax.swing.JLabel" binding="nomeUtente">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-459265"/>
+          <text value="nomeUtente"/>
+        </properties>
+      </component>
+      <vspacer id="34281">
+        <constraints>
+          <grid row="5" column="1" row-span="2" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="9b999" class="javax.swing.JLabel" binding="idGiocatore">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-459265"/>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="356e8" class="javax.swing.JLabel" binding="livelloGiocatore">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-459265"/>
+          <text value="Livello"/>
+        </properties>
+      </component>
+      <component id="36f63" class="javax.swing.JLabel" binding="gradoGiocatore">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-459265"/>
+          <text value="Grado"/>
+        </properties>
+      </component>
+      <component id="185d6" class="javax.swing.JButton" binding="storicoPartiteButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5197101"/>
+          <foreground color="-14472029"/>
+          <text value="Storico Partite"/>
+        </properties>
+      </component>
+      <component id="16ffe" class="javax.swing.JButton" binding="classificaButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5197101"/>
+          <foreground color="-14472029"/>
+          <text value="Classifica"/>
+        </properties>
+      </component>
+      <component id="b5e5d" class="javax.swing.JButton" binding="giocaButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-7532783"/>
+          <font name="Source Code Pro" size="18" style="1"/>
+          <foreground color="-16185080"/>
+          <text value="Gioca"/>
+        </properties>
+      </component>
+      <component id="6504b" class="javax.swing.JButton" binding="esciButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5197101"/>
+          <foreground color="-16185080"/>
+          <text value="Esci"/>
+        </properties>
+      </component>
+      <component id="fcd5" class="javax.swing.JCheckBox" binding="statoCheckBox" default-binding="true">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="stato"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

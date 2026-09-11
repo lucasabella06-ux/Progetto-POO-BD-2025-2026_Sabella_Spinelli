@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.SchermataPartecipanteLobby">
+  <grid id="27dc6" binding="panelSchermataLobby" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="806" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-11820221"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="9b56b" class="javax.swing.JButton" binding="listaGiocatoriButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5197101"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-16487678"/>
+          <text value="Lista Giocatori"/>
+        </properties>
+      </component>
+      <component id="b0985" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="18" style="0"/>
+          <text value="In attesa che l'host avvii la partita..."/>
+        </properties>
+      </component>
+      <component id="7b387" class="javax.swing.JLabel" binding="labelNumeroGiocatori">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="20" style="2"/>
+          <foreground color="-459265"/>
+          <text value="NumeroGiocatori"/>
+        </properties>
+      </component>
+      <component id="bf80f" class="javax.swing.JLabel" binding="labelHostLobby">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="JetBrains Mono" size="22" style="3"/>
+          <foreground color="-459265"/>
+          <text value="Lobby di "/>
+        </properties>
+      </component>
+      <component id="170b2" class="javax.swing.JButton" binding="esciDallaLobbyButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2544609"/>
+          <font name="Consolas" size="14" style="1"/>
+          <foreground color="-459265"/>
+          <text value="Esci dalla lobby"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
